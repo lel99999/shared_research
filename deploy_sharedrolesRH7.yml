@@ -95,8 +95,8 @@
     - epel7
     - emacsRH7
     - openjdk1.8
-    - odbc
-    - postgresql-client
+#   - odbc
+#   - postgresql-client
     - devtools7
 
 # hosts: research_python
