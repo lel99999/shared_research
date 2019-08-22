@@ -1,0 +1,5 @@
+---
+dependencies:
+- role: python
+  when: install_python
+- role: jdk
