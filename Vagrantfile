@@ -13,11 +13,12 @@ Vagrant.configure("2") do |config|
 
   config.vm.define "sharedrolesRH7" do |sharedrolesRH7|
     sharedrolesRH7.vm.box = "clouddood/RH7.5_baserepo"
-    sharedrolesRH7.vm.hostname = "pythonRH7"
+    sharedrolesRH7.vm.hostname = "sharedrolesRH7"
     sharedrolesRH7.vm.network "private_network", ip: "192.168.60.137"
     sharedrolesRH7.vm.provision "shell", :inline => "sudo echo '192.168.60.137 sharedrolesRH7.local sharedrolesRH7' >> /etc/hosts"
     sharedrolesRH7.vm.provision "ansible" do |ansible|
-      ansible.playbook = "deploy_sharedrolesRH7.yml"
+#     ansible.playbook = "deploy_sharedrolesRH7.yml"
+      ansible.playbook = "deploy_sharedrolesTest.yml"
       ansible.inventory_path = "vagrant_hosts"
       #ansible.tags = ansible_tags
       #ansible.verbose = ansible_verbosity

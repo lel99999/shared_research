@@ -1,0 +1,10 @@
+---
+dependencies:
+  - role: openjdk11
+# - role: jdk
+#  GOCD Stance on JAVA
+#  https://www.gocd.org/2019/05/21/official-stance-on-java/
+#  The impact upon upgrading GoCD:
+#Java 13 is expected to be out around September 2019, around the same time this policy kicks in. 
+#This will mean that in the GoCD release around September 2019, GoCD will support Java 11, 12, 13 only. 
+#If this is not already obvious: Support for Java 8, 9, 10 will be completely dropped in the September 2019 release.
