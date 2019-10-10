@@ -7,6 +7,13 @@
 # shell: yum install -y https://download1.rstudio.org/desktop/centos7/x86_64/rstudio-1.2.1335-x86_64.rpm
 #  when: custom_repo
 
+
+- name: Install "xcb" error fix
+  yum:
+    name: libxkbcommon-x11
+    state: present
+    disaable_gpg_check: yes
+
 # yum:
 #   name: http://download1.rstudio.org/rstudio-0.98.1103-x86_64.rpm
 #   name: https://download1.rstudio.org/desktop/centos7/x86_64/rstudio-1.2.1335-x86_64.rpm 
