@@ -12,7 +12,7 @@
   yum:
     name: libxkbcommon-x11
     state: present
-    disaable_gpg_check: yes
+    disable_gpg_check: yes
 
 # yum:
 #   name: http://download1.rstudio.org/rstudio-0.98.1103-x86_64.rpm
